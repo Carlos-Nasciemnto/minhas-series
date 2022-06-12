@@ -1,0 +1,36 @@
+<%- include('../partials/header') %>
+
+   <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <form method="post">
+                <h2>Nova Series</h2>            
+                <div class="mb-3">
+                    <label for="name">Nome da Séries</label>
+                    <input name="name" type="text" class="form-control" id="exempleInputName" aria-describedby="emailHelp" placeholder="informe o nome">
+                    <div id="nameHelp" class="form-text"></div>
+                          <small id="nameHelp" class="form-text text-muted">Nome da série a ser salva.e</small>
+                          <% if(errors && errors.indexOf('name')>=0){ %>
+                            <small id="nameHelp" class="form-text text-muted">Por favor, informe o nome da serie</small>
+                          <% } %>                      
+                </div>
+                <div class="mb-3">
+                    <div class="form-group">                   
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Situação:</label>
+                        <select id="status" class="form-control" name="status">
+                          <option value="to-watch">Para assistir</option>
+                          <option value="watching">Assistindo</option>
+                          <option value="watched">Assistido</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary">Salvar</button>  
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <%- include('../partials/footer') %>
