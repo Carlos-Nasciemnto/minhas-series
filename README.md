@@ -1,9 +1,9 @@
-## minhas-series
+# minhas-series
 
-# Projeto desenvolvido no curso Devpleno.
+- Projeto desenvolvido no curso Devpleno.
 
-# Tecnologia utilizada:
+- Tecnologia utilizada:
 
-# Express, Nodejs, EJS, JacaScript, HTML, CSS.
+- Express, Nodejs, EJS, JacaScript, HTML, CSS.
 
 
