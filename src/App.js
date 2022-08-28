@@ -21,6 +21,7 @@ function App() {
       setData(res.data) 
     })
   }, [])
+  
   return (
     <Router>
       <div> 

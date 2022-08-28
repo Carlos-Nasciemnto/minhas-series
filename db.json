@@ -10,11 +10,14 @@
     }
   },
   "genres": {
-    "1": {
-      "name": "Ação"
+    "1661686664282": {
+      "name": "Romance"
     },
-    "2": {
-      "name": "Comédia"
+    "1661686813997": {
+      "name": "Terror"
+    },
+    "novo": {
+      "name": "ação11111"
     }
   },
   "count": 0

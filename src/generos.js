@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios' 
 import { Link } from 'react-router-dom'
+
 const Generos = () => {
     const [data, setData] = useState([])
     useEffect(() => {
@@ -23,23 +24,22 @@ const Generos = () => {
             <th scope='row'>{record.id}</th>
             <td>{record.name}</td>
             <td>
-                <button className='btn btn-danger' onClick={() => deleteGenero(record.id)}>-</button>
+                <button className='btn btn-danger' onClick={() => deleteGenero(record.id)}>Remover</button>
                 <Link to={'/generos/' + record.id} className='btn btn-warning' >Editar</Link>
             </td>
         </tr>
         )
     }
-
     if (data.length === 0 ) {
-        <div className='container'>
-            <h1>Generos</h1>            
+       return (
+       <div className='container'>
+            <h1>Genêros</h1>                        
             <div className='alert alert-warning' role='alert'>
                 Você não possui genêros criados.
             </div>
         </div>
-    } 
-
-
+        )
+    }   
     return(
          <div className='container'>
             <h1>Generos</h1>
